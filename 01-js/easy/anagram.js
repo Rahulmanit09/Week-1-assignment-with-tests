@@ -7,8 +7,24 @@
   - `npm run test-anagram`
 */
 
-function isAnagram(str1, str2) {
+function AnagramStrings(str1,str2)
+{
+ let st1=str1.toLowerCase().split('').sort().join('');
+  let st2=str2.toLowerCase().split('').sort().join('');
 
+  console.log(st1)
+  console.log(st2)
+  if (st1===st2)
+  {
+    console.log("both are anagram strings");
+  }
+  else
+  {
+    console.log("both are not anagram strings");
+  }
+  console.log(st1.toLowerCase())
 }
+
+AnagramStrings("sTr1 dghk"," ghkstD1r")
 
 module.exports = isAnagram;
